@@ -1,0 +1,362 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<div class="sale-banner">
+		<p>BLACK FRIDAY SPECIAL: 75% OFF Building Fee Until Thanksgiving!</p>
+	</div>
+
+	<header>
+		<div class="container">
+			<h1>RichmondPCS</h1>
+			<nav>
+				<a href="#services">Services</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<section class="hero">
+		<div class="container">
+			<h2>Custom PC Builds in Richmond</h2>
+			<p>Professional PC building services tailored to your needs</p>
+			<a href="#contact" class="cta-button">Get Started</a>
+		</div>
+	</section>
+
+	<section id="services" class="services">
+		<div class="container">
+			<h2>Our Services</h2>
+			<div class="service-grid">
+				<div class="service-card">
+					<h3>Custom PC Builds</h3>
+					<p>Expert assembly of custom gaming, workstation, and general-purpose computers tailored to your specifications and budget.</p>
+				</div>
+				<div class="service-card">
+					<h3>PC Upgrades</h3>
+					<p>Upgrade your existing system with new components. We'll help you choose the right parts and install them professionally.</p>
+				</div>
+				<div class="service-card">
+					<h3>System Consultation</h3>
+					<p>Not sure what you need? We'll work with you to design the perfect system for your use case and budget.</p>
+				</div>
+				<div class="service-card">
+					<h3>Repairs & Support</h3>
+					<p>Troubleshooting, repairs, and ongoing technical support to keep your system running smoothly.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<h2>Why Choose RichmondPCS?</h2>
+			<div class="features">
+				<div class="feature">
+					<h3>Expert Knowledge</h3>
+					<p>Years of experience building high-performance systems</p>
+				</div>
+				<div class="feature">
+					<h3>Quality Parts</h3>
+					<p>We source reliable components from trusted manufacturers</p>
+				</div>
+				<div class="feature">
+					<h3>Local Service</h3>
+					<p>Based in Richmond, providing personalized local support</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact" class="contact">
+		<div class="container">
+			<h2>Get In Touch</h2>
+			<p>Ready to build your dream PC? Contact us today to discuss your project.</p>
+			<div class="contact-info">
+				<p><strong>Email:</strong> info@richmondpcs.com</p>
+				<p><strong>Phone:</strong> (804) 555-0100</p>
+				<p><strong>Location:</strong> Richmond, VA</p>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 RichmondPCS. All rights reserved.</p>
+		</div>
+	</footer>
+</Layout>
+
+<style>
+	.sale-banner {
+		background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+		color: #111827;
+		text-align: center;
+		padding: 12px 20px;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	}
+
+	.sale-banner p {
+		margin: 0;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 24px;
+	}
+
+	header {
+		background: #0f172a;
+		padding: 24px 0;
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+		border-bottom: 1px solid #1e293b;
+	}
+
+	header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header h1 {
+		margin: 0;
+		font-size: 28px;
+		color: #ffffff;
+		font-weight: 800;
+		letter-spacing: -0.5px;
+	}
+
+	nav {
+		display: flex;
+		gap: 32px;
+	}
+
+	nav a {
+		color: #cbd5e1;
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.2s;
+	}
+
+	nav a:hover {
+		color: #60a5fa;
+	}
+
+	.hero {
+		background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+		color: white;
+		padding: 140px 0;
+		text-align: center;
+		border-bottom: 1px solid #1e293b;
+	}
+
+	.hero h2 {
+		margin: 0 0 16px;
+		font-size: 48px;
+		font-weight: 800;
+		line-height: 1.2;
+		letter-spacing: -1px;
+	}
+
+	.hero p {
+		margin: 0 0 40px;
+		font-size: 20px;
+		line-height: 1.6;
+		color: #cbd5e1;
+	}
+
+	.cta-button {
+		display: inline-block;
+		background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+		color: white;
+		padding: 14px 36px;
+		border-radius: 8px;
+		text-decoration: none;
+		font-weight: 700;
+		transition: all 0.3s;
+		box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+		border: 1px solid transparent;
+	}
+
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 12px 32px rgba(59, 130, 246, 0.5);
+		background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+	}
+
+	.services {
+		padding: 100px 0;
+		background: #0f172a;
+		border-bottom: 1px solid #1e293b;
+	}
+
+	.services h2,
+	.about h2,
+	.contact h2 {
+		text-align: center;
+		font-size: 36px;
+		margin: 0 0 60px;
+		color: #ffffff;
+		font-weight: 800;
+		letter-spacing: -0.5px;
+	}
+
+	.service-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 32px;
+	}
+
+	.service-card {
+		background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+		padding: 40px;
+		border-radius: 12px;
+		border: 1px solid #334155;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+		transition: all 0.3s;
+	}
+
+	.service-card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 16px 40px rgba(59, 130, 246, 0.2);
+		border-color: #60a5fa;
+		background: linear-gradient(135deg, #1e293b 0%, #1a2f4d 100%);
+	}
+
+	.service-card h3 {
+		margin: 0 0 16px;
+		color: #60a5fa;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	.service-card p {
+		margin: 0;
+		color: #cbd5e1;
+		line-height: 1.7;
+	}
+
+	.about {
+		padding: 100px 0;
+		background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+		border-bottom: 1px solid #1e293b;
+	}
+
+	.features {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 48px;
+		text-align: center;
+	}
+
+	.feature h3 {
+		margin: 0 0 12px;
+		color: #60a5fa;
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	.feature p {
+		margin: 0;
+		color: #cbd5e1;
+		line-height: 1.7;
+	}
+
+	.contact {
+		padding: 100px 0;
+		background: #0f172a;
+		text-align: center;
+		border-bottom: 1px solid #1e293b;
+	}
+
+	.contact p {
+		color: #cbd5e1;
+		font-size: 18px;
+		margin-bottom: 40px;
+		line-height: 1.6;
+	}
+
+	.contact-info {
+		display: inline-block;
+		text-align: left;
+		background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+		padding: 40px 56px;
+		border-radius: 12px;
+		border: 1px solid #334155;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	}
+
+	.contact-info p {
+		margin: 12px 0;
+		color: #e2e8f0;
+		font-size: 16px;
+	}
+
+	.contact-info strong {
+		color: #60a5fa;
+		font-weight: 600;
+	}
+
+	footer {
+		background: #0f172a;
+		color: white;
+		padding: 40px 0;
+		text-align: center;
+		border-top: 1px solid #1e293b;
+	}
+
+	footer p {
+		margin: 0;
+		color: #64748b;
+		font-size: 14px;
+	}
+
+	@media (max-width: 768px) {
+		header .container {
+			flex-direction: column;
+			gap: 16px;
+		}
+
+		nav {
+			gap: 24px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.hero {
+			padding: 80px 0;
+		}
+
+		.hero h2 {
+			font-size: 36px;
+		}
+
+		.hero p {
+			font-size: 18px;
+		}
+
+		.services,
+		.about,
+		.contact {
+			padding: 60px 0;
+		}
+
+		.services h2,
+		.about h2,
+		.contact h2 {
+			margin: 0 0 40px;
+			font-size: 28px;
+		}
+
+		.sale-banner {
+			font-size: 14px;
+			padding: 10px 16px;
+		}
+	}
+</style>
